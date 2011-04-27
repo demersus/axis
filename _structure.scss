@@ -1,0 +1,63 @@
+/* grids */
+.has-2-columns,
+.has-3-columns,
+.has-sidebar {
+    overflow: hidden;
+}
+.has-2-columns > .column {
+    float: left;
+    margin: 0 0.5% 0 0.5%;
+    width: 48%;
+}
+.has-3-columns > .column {
+    float: left;
+    margin: 0 0.5% 0 0.5%;
+    width: 31%;
+}
+.has-sidebar > .main, .has-sidebar.left > .main {
+  float: right;
+  width: 74%;
+  margin: 0 0 0 0.5%;
+}
+.has-sidebar > .sidebar, .has-sidebar.left > .sidebar {
+  float: left;
+  width: 24%;
+  margin: 0 0.5% 0 0;
+}
+.has-sidebar.right > .main {
+  float: left;
+  width: 74%;
+  margin: 0 0.5% 0 0;
+}
+.has-sidebar.right > .sidebar {
+  float: right;
+  width: 24%;
+  margin: 0 0 0 0.5%;
+}
+
+/* embedded images */
+img.left {
+  float: left;
+  margin: 0.5em 0.5em 0.5em 0;
+}
+img.right {
+  float: right;
+  margin: 0.5em 0 0.5em 0.5em;
+}
+
+
+/* Rails flash messages */
+.message.notice, .message.info {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+.message.warning, .message.alert {
+  background-color: #f90;
+  font-weight: bold;
+  border: solid 1px #C66;
+}
+.message.error {
+  background-color: #FCC;
+  font-weight: bold;
+  border: solid 1px #C66;
+}

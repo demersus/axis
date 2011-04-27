@@ -1,0 +1,35 @@
+$icon_path: "../images/icons" !default;
+$action_icon_size: 22 !default;
+/* Menus */
+@import "compass/css3";
+menu.context, .sidebar nav > ul, nav.context > ul {
+  width: 98%;
+  margin: 0.25em 0;
+  padding: 0 1%;
+  list-style: none;
+  overflow: auto;
+  background: #eee;
+  li {
+    list-style: none;
+  }
+}
+nav.actions a.action, menu.context a.action {
+  @include inline-block;
+  padding: 1px 1px 1px #{($action_icon_size + 2)}px;
+  line-height: #{($action_icon_size + 2)}px;
+  &.new { background: url(#{$icon_path}/#{$action_icon_size}/add.png) left center no-repeat; }
+  &.copy { background: url(#{$icon_path}/#{$action_icon_size}/edit-copy.png) left center no-repeat; }
+  &.edit { background: url(#{$icon_path}/#{$action_icon_size}/edit.png) left center no-repeat; }
+  &.delete, &.destroy { background: url(#{$icon_path}/#{$action_icon_size}/delete.png) left center no-repeat; }
+  &.index, &.dashboard { background: url(#{$icon_path}/#{$action_icon_size}/dashboard.png) left center no-repeat; }
+  &.search { background: url(#{$icon_path}/#{$action_icon_size}/search.png) left center no-repeat; }
+  &.show { background: url(#{$icon_path}/#{$action_icon_size}/show.png) left center no-repeat; }
+  &.logout,&.exit { background: url(#{$icon_path}/#{$action_icon_size}/exit.png) left center no-repeat; }
+  &.home { background: url(#{$icon_path}/#{$action_icon_size}/home.png) left center no-repeat; }
+}
+.sidebar nav > ul li, .sidebar nav.actions a.action {
+  display: block;
+}
+nav.crumbs {
+  text-align: center;
+}

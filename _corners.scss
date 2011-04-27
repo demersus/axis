@@ -1,0 +1,17 @@
+@mixin round-corners($rad: 10) {
+  -moz-border-radius: #{$rad}px;
+  -webkit-border-radius: #{$rad}px;
+  border-radius: #{$rad}px;
+}
+
+@mixin round-top-corners($rad: 10) {
+  -moz-border-radius: #{$rad}px #{$rad}px 0 0;
+  -webkit-border-radius: #{$rad}px #{$rad}px 0 0;
+  border-radius: #{$rad}px #{$rad}px 0 0;
+}
+
+@mixin no-round-corners {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
